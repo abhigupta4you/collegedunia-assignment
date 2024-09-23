@@ -26,7 +26,7 @@
      const [searchTerm, setSearchTerm] = useState('');
      const [searchResults, setSearchResults] = useState(jsonData);
    
-    // searh functionality
+    // searh functionality   - easy way to search
     
      const handleSearch = event => {              
        setSearchTerm(event.target.value);
@@ -37,7 +37,7 @@
      };
 
 
-    // different sorting methods (onclicking at table, it will get sorted)
+    // different sorting methods (onclicking at table, it will get sorted)  --- it take "key" and order(self-defined) and implement functionality
      const handleSort = (key, order) => {        
        const sortedResults = [...searchResults].sort((a, b) => {
          if (order === 'asc') {
